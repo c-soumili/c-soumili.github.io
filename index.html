@@ -1,82 +1,1253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soumili Chattopadhyay | Portfolio</title>
-    <link href="https://fonts.googleapis.com" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            /* Animated Gradient Background */
-            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-            color: white;
-        }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arindam Karmakar</title>
 
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-        .container {
-            text-align: center;
-            padding: 2rem;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-        }
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-        h1 {
-            font-size: 3.5rem;
-            letter-spacing: -1px;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-        }
-
-        p {
-            font-size: 1.2rem;
-            font-weight: 300;
-            opacity: 0.9;
-            margin-bottom: 2rem;
-        }
-
-        .cta-btn {
-            text-decoration: none;
-            color: white;
-            border: 2px solid white;
-            padding: 0.8rem 2rem;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-        }
-
-        .cta-btn:hover {
-            background: white;
-            color: #e73c7e;
-        }
-    </style>
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>Soumili Chattopadhyay</h1>
-        <p>Visual Designer & Creative Strategist</p>
-        <a href="mailto:your-email@example.com" class="cta-btn">Get In Touch</a>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Arindam Karmakar" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Soumili Chattopadhyay">Soumili C.</h1>
+
+          <p class="title">Software Engineer | R&D</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:connect@karindam.in" class="contact-link">connect@karindam.in</a>
+            </div>
+
+          </li>
+
+          <!-- <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+910000000000" class="contact-link">+91 00000 00000</a>
+            </div>
+
+          </li> -->
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2001-10-04">October 04, 2001</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>New Delhi, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/arindam-karmakar/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/k-arindam" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://medium.com/@k-arindam" class="social-link">
+              <ion-icon name="logo-medium"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://swiftpackageindex.com/k-arindam" class="social-link">
+              <ion-icon name="logo-apple"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://pub.dev/publishers/karindam.in/packages" class="social-link">
+              <ion-icon name="extension-puzzle"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/arindamk410" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Posts</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I craft seamless mobile experiences across Apple platforms and cross-platform ecosystems. 
+            Using native iOS, watchOS, and tvOS technologies, alongside Flutter for cross-platform development, I build high-performance, scalable applications.
+          </p>
+
+          <p>
+            With a deep dive into CoreML & TFLite-powered edge AI, 
+            real-time applications using sockets, hardware-app interactions via Bluetooth & network frameworks, 
+            and expertise in advanced camera applications, AR, custom keyboards, speech interfaces, and more
+            - I thrive on building solutions that push boundaries.
+          </p>
+
+          <p>
+            Beyond apps, I create plug-and-play Swift & Dart packages, making development faster and smarter. 
+            Whether it's optimizing AI workflows, building high-performance UI components, or connecting apps with the physical world - I'm all about blending innovation with efficiency. 
+            Let's build the future, one line of code at a time!
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Apple Platforms</h4>
+
+                <p class="service-item-text">
+                  Proficient in developing native apps for Apple platforms using Swift.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cross-platform</h4>
+
+                <p class="service-item-text">
+                  Professional development of cross-platform applications using Flutter.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Open Source</h4>
+
+                <p class="service-item-text">
+                  Contributing to open source projects and creating reusable plugins.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Videography</h4>
+
+                <p class="service-item-text">
+                  Hobbies include video editing using DaVinci Resolve.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Latest Releases</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="SwiftUICamera" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>SwiftUICamera</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    SwiftUICamera makes it effortless to add rich camera functionality to your SwiftUI applications — with support for photo capture, video recording, live frame output, and full control over camera hardware.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="ShelfEssentials" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>ShelfEssentials</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    shelf_essentials contains essential utilities and middleware for building web servers with Shelf in Dart and Flutter.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="SwiftNP" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>SwiftNP</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    SwiftNP is a Swift package for numerical computing inspired by the popular Python library, NumPy. It provides support for multi-dimensional arrays (NDArray), along with basic operations on these arrays, such as reshaping, element-wise operations, and more.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="AwesomeNavigation" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>AwesomeNavigation</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    AwesomeNavigation is a lightweight and elegant SwiftUI navigation library designed to make routing in iOS/macOS apps simple, declarative, and centralized — all while retaining native SwiftUI performance and flexibility.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/my-avatar.png" alt="MultipeerConnectivity" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>MultipeerConnectivity</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    multipeer_connectivity for flutter simplifies the process of discovering nearby devices, establishing peer-to-peer connections, and exchanging data (messages, files, and streams) without relying on Wi-Fi or cellular networks.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="SwiftUICamera" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>SwiftUICamera</h4>
+
+              <time datetime="2024-10-04">4th October, 2024</time>
+
+              <div data-modal-text>
+                <p>
+                  SwiftUICamera makes it effortless to add rich camera functionality to your SwiftUI applications — with support for photo capture, video recording, live frame output, and full control over camera hardware.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - Technologies
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Technologies</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-apple.png" alt="apple logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-flutter.png" alt="flutter logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-ml.png" alt="coreml logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-ar.png" alt="arkit logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-android.png" alt="android logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-firebase.png" alt="firebase logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-tf.png" alt="tensorflow logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-play.png" alt="playstore logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-cpp.png" alt="c++ logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-socket.png" alt="socket logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-git.png" alt="git logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Engineer</h4>
+
+              <span>Samsung Research, Noida | Oct 2025 — Present</span>
+
+              <p class="timeline-text">
+                From building apps to shaping the Galaxy, on a mission to create technology that truly matters!
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SDE II</h4>
+
+              <span>HestaBit, Noida | Jul 2022 — Sep 2025</span>
+
+              <p class="timeline-text">
+                1. Led the development of a professional underwater camera app for iPhones with advanced image/video capture using a Bluetooth-controlled housing. Integrated manual pro controls (ISO, shutter speed, ProRAW, filters, etc.) and built custom editing tools using Metal and CoreML for on-device AI-based enhancements. The app also displayed dive-specific data such as depth graphs and hardware telemetry via BLE.<br><br>
+                2. Developed a multi-platform football infotainment system across iOS, watchOS, and tvOS. Referees could control match events (score, fouls, whistles) using iPhone or Apple Watch, with real-time synchronization, sounds & animations on Apple TV. Supported both online and offline modes, QR/nearby device login, custom ads, match management and a web admin dashboard for the online version.<br><br>
+                3. Contributed to various cross-platform (Flutter) and native applications, including AR features, custom keyboards, ebook readers, map-based services, speech-to-text and text-to-speech, and in-app purchases for both Android and iOS platforms.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Student Intern</h4>
+
+              <span>Future Ready Talent (Microsoft), Remote | Sep 2021 — Feb 2022</span>
+
+              <p class="timeline-text">
+                1. Explored and implemented cloud solutions using Microsoft Azure, including services like Azure Cosmos DB, Linux Virtual Machines, and GitHub Actions.<br><br>
+                2. Gained hands-on experience in deploying and managing cloud-based applications, automating workflows, and working with scalable NoSQL databases.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Mobile Developer</h4>
+
+              <span>Freelancing, Remote | Sep 2019 — Aug 2021</span>
+
+              <p class="timeline-text">
+                1. Experience developing native and cross-platform applications, including both greenfield projects and ongoing maintenance with new feature additions.<br><br>
+                2. Successfully published apps on the Google Play Store and Apple App Store. Delivered several end-to-end solutions, covering UI/UX design, backend development, and mobile applications.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">B.Tech in Computer Science & Engineering</h4>
+
+              <span>University of Engineering & Management (UEM), Jaipur | Jul 2019 — Jun 2023</span>
+
+              <p class="timeline-text">
+                1. Designed & developed an autonomous driving hardware prototype utilizing Raspberry Pi, Arduino, camera modules, and various sensors. Engineered system software with Python, Dart, and C++, including integration and fine-tuning of multiple open-source AI vision models for navigation and object detection. Built companion applications in Flutter to support control, monitoring, and visualization.<br><br>
+                2. Specialized in Computer Science & Engineering, gaining expertise in software development, algorithms, and system design.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Class 10 & Class 12 - Science (PCMB)</h4>
+
+              <span>DAV Public School, Rupnarayanpur | 2005 — 2019</span>
+
+              <p class="timeline-text">
+                Studied Physics, Chemistry, Mathematics, and Biology (PCMB) with a strong foundation in analytical and problem-solving skills.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Swift & SwiftUI</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Flutter & Dart</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Edge AI</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Git</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C++</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Rust</h5>
+                <data value="20">20%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 20%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Figma</h5>
+                <data value="35">35%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 35%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">DaVinci Resolve</h5>
+                <data value="30">30%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 30%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <iframe src="https://github.com/sponsors/k-arindam/button" title="Sponsor k-arindam" height="32" width="114" style="border: 0; border-radius: 6px; margin-left: 4px; margin-bottom: 20px;"></iframe>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Plugins</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Frameworks</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <!-- <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li> -->
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Plugins</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Frameworks</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <!-- <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li> -->
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="frameworks">
+              <a href="https://github.com/renderprotocol">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/renderprotocolPortfolio.jpg" alt="renderprotocol" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Render Protocol</h3>
+
+                <p class="project-category">Frameworks</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="plugins">
+              <a href="https://github.com/k-arindam/SwiftUICamera">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/SwiftUICameraPortfolio.png" alt="swiftuicamera" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SwiftUICamera</h3>
+
+                <p class="project-category">Plugins</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="plugins">
+              <a href="https://pub.dev/packages/shelf_essentials">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/shelf_essentials_portfolio.jpg" alt="shelfessentials" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Shelf Essentials</h3>
+
+                <p class="project-category">Plugins</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="plugins">
+              <a href="https://github.com/k-arindam/SwiftNP">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/SwiftNPPortfolio.png" alt="swiftnp" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SwiftNP</h3>
+
+                <p class="project-category">Plugins</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/k-arindam/WithMe">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/WithMePortfolio.png" alt="withme" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">WithMe</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="plugins">
+              <a href="https://github.com/k-arindam/AwesomeNavigation">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/AwesomeNavigationPortfolio.png" alt="awesomenavigation" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AwesomeNavigation</h3>
+
+                <p class="project-category">Plugins</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="posts">
+
+        <header>
+          <h2 class="h2 article-title">Posts</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://renderprotocol.karindam.in">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/renderprotocol.jpg" alt="Render Protocol" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Framework</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-06-20">January 04, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Render Protocol</h3>
+
+                  <p class="blog-text">
+                    Render Protocol is an open-source, AI-powered, server-driven UI framework for modern mobile platforms, starting with SwiftUI and Flutter, and expanding to Jetpack Compose!
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@k-arindam/building-a-camera-app-in-swiftui-shouldnt-feel-like-rocket-science-307c3a264675">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/swiftui-camera.jpg" alt="Building a Camera App in SwiftUI Shouldn't Feel Like Rocket Science" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">iOS</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-06-20">June 20, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Building a Camera App in SwiftUI Shouldn't Feel Like Rocket Science</h3>
+
+                  <p class="blog-text">
+                    SwiftUICamera makes it effortless to add rich camera functionality to your SwiftUI applications!
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://github.com/flutter/flutter/pull/171113">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/171113.png" alt="Contribution highlighted in Flutter Notable Commits (July 2025)" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Flutter</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-07-26">July 26, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Contribution highlighted in Flutter Notable Commits (July 2025)</h3>
+
+                  <p class="blog-text">
+                    This PR adds a new boolean property automaticallyImplyActions to the AppBar widget. It provides fine-grained control over whether an automatic menu icon is added when an endDrawer is present and actions are null or empty.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://www.linkedin.com/posts/arindam-karmakar_happydiwali-diwali2025-festivaloflights-activity-7385913871842263040-heJI?utm_source=share&utm_medium=member_desktop&rcm=ACoAADeivPgB8PfRHV2lTkQG1gpQyyAXs4EHxQs">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/IMG_3125.jpeg" alt="Happy Diwali 2025" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Festival</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-10-20">October 20, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Happy Diwali 2025</h3>
+
+                  <p class="blog-text">
+                    Wishing everyone a bright, joyful, and high-performance Diwali filled with light, laughter, and some much-needed time offline (unless you're deploying fireworks)!
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://www.linkedin.com/posts/arindam-karmakar_samsungresearch-srinoida-newbeginnings-activity-7379148217986342912-TCmq?utm_source=share&utm_medium=member_desktop&rcm=ACoAADeivPgB8PfRHV2lTkQG1gpQyyAXs4EHxQs">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/image.png" alt="Next chapter with Samsung Research" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Career</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-10-01">October 01, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Next chapter with Samsung Research</h3>
+
+                  <p class="blog-text">
+                    Excited to put my skills to work, explore new challenges, and soak in a ton of learning along the way. Here’s to innovation, growth, and shaping what’s next in tech!
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://www.linkedin.com/posts/arindam-karmakar_appleintelligence-appintents-coreml-activity-7302280694251102209-aY1w?utm_source=share&utm_medium=member_desktop&rcm=ACoAADeivPgB8PfRHV2lTkQG1gpQyyAXs4EHxQs">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/IMG_1654.jpeg" alt="Incredible experience at Apple Gurugram" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Event</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-02-20">February 20, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Incredible experience at Apple Gurugram</h3>
+
+                  <p class="blog-text">
+                    Exploring the synergy between App Intents, CoreML, and on-device Artificial Intelligence was a highlight. Unlocking powerful new possibilities for seamless, context-aware & privacy-focused AI interactions.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.8391237588!2d77.0688976!3d28.5272803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3b1a4c9e8ed%3A0x4d1c6e4d1c6e4d1c!2sNew%20Delhi%2C%20Delhi%2C%20India!5e0!3m2!1sen!2sin!4v1647608789441!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="text" name="topic" class="form-input" placeholder="Topic" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
 
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
